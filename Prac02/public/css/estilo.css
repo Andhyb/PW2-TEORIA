@@ -183,3 +183,17 @@ main {
   flex: 1;
   padding: 30px;
 }
+
+.foto-con-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descripcion-img {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
