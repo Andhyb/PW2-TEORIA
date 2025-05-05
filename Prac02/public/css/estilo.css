@@ -191,9 +191,12 @@ main {
 }
 
 .descripcion-img {
-  font-size: 0.85em;
-  color: #555;
+  font-size: 0.9em;
+  color: rgba(60, 60, 60, 0.6); /* tono gris con 60% de opacidad */
   margin-top: 8px;
-  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 300;
 }
+
 
