@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Estándares Web</title>
   <link rel="stylesheet" href="/css/estilo.css">
+  <style>
+    .link-externo {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .link-externo:hover {
+      color: #1abc9c;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,14 +30,14 @@
   </header>
   <main>
     <h2>¿Qué es la W3C?</h2>
-    <p>La <strong>W3C</strong> (World Wide Web Consortium) es una comunidad internacional que desarrolla estándares abiertos para asegurar el crecimiento de la Web.</p>
+    <p>La <strong>W3C</strong> (<a class="link-externo" href="https://www.w3.org/" target="_blank">World Wide Web Consortium</a>) es una comunidad internacional que desarrolla estándares abiertos para garantizar el crecimiento de la Web a largo plazo.</p>
     
     <h3>Estándares destacados:</h3>
     <ul>
-      <li><strong>SVG:</strong> Gráficos vectoriales escalables para navegadores.</li>
-      <li><strong>WOFF:</strong> Formato comprimido de fuentes para la web.</li>
-      <li><strong>WebRTC:</strong> Comunicación en tiempo real entre navegadores (audio, video, datos).</li>
-      <li><strong>XML:</strong> Lenguaje para almacenar y transportar datos.</li>
+      <li><strong><a class="link-externo" href="https://developer.mozilla.org/es/docs/Web/SVG" target="_blank">SVG:</a></strong> Gráficos vectoriales escalables ideales para interfaces web.</li>
+      <li><strong><a class="link-externo" href="https://developer.mozilla.org/es/docs/Web/WOFF" target="_blank">WOFF:</a></strong> Formato comprimido de fuentes diseñado para la web.</li>
+      <li><strong><a class="link-externo" href="https://developer.mozilla.org/es/docs/Web/API/WebRTC_API" target="_blank">WebRTC:</a></strong> Tecnología que permite la comunicación en tiempo real entre navegadores.</li>
+      <li><strong><a class="link-externo" href="https://developer.mozilla.org/es/docs/Web/XML" target="_blank">XML:</a></strong> Lenguaje de marcado para el intercambio de datos estructurados.</li>
     </ul>
   </main>
   <footer>
