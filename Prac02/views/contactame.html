@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctame</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario de Contacto</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/autor">Autor</a>
+      <a href="/estandaresWeb">Estándares Web</a>
+      <a href="/contactame">Contáctame</a>
+    </nav>
+  </header>
+  <main>
+    <form id="form-contacto">
+      <p>
+        <label for="nombres">Nombres:</label><br>
+        <input type="text" id="nombres" name="nombres">
+      </p>
+      <p>
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo">
+      </p>
+      <p>
+        Género:<br>
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="femenino"> Femenino
+      </p>
+      <p>
+        <label for="nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="nacimiento">
+      </p>
+      <p>
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto">
+      </p>
+      <p>
+        <label for="contenido">Mensaje:</label><br>
+        <textarea id="contenido" name="contenido" rows="4" cols="50"></textarea>
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+      <p id="mensaje-validacion" style="color:red; font-weight:bold;"></p>
+    </form>
+  </main>
+  <footer>
+    <p>Programación Web 2</p>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>
