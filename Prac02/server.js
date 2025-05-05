@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = 8085;
+const PORT = 8086;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -13,4 +13,4 @@ app.get('/galeria', (req, res) => res.sendFile(path.join(__dirname, 'views/galer
 app.get('/estandaresWeb', (req, res) => res.sendFile(path.join(__dirname, 'views/estandaresWeb.html')));
 app.get('/contactame', (req, res) => res.sendFile(path.join(__dirname, 'views/contactame.html')));
 
-app.listen(PORT, () => console.log(`Servidor corriendo en http://127.0.0.1:${PORT}/lab02`));
+app.listen(PORT, () => console.log(`Servidor corriendo en http://127.0.0.1:${PORT}/prac02`));
