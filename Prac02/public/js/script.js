@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mensaje.textContent = "Por favor, completa todos los campos requeridos.";
       } else {
         mensaje.style.color = "green";
-        mensaje.textContent = "Formulario completado correctamente (no se envía).";
+        mensaje.textContent = "Formulario completado correctamente.";
       }
     });
   }
