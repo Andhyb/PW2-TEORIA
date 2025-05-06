@@ -1,12 +1,12 @@
-// Muestra el año actual automáticamente en el footer
 document.addEventListener("DOMContentLoaded", function () {
+  // Muestra el año actual en el footer
   const footer = document.querySelector("footer p");
   const year = new Date().getFullYear();
   if (footer) {
-    footer.innerHTML += " | &copy; " + year;
+    footer.innerHTML += " | © " + year;
   }
 
-// script para el formulario de contactame.html
+  // Validacin del formulario de contactame.html
   const formulario = document.getElementById("form-contacto");
   if (formulario) {
     formulario.addEventListener("submit", function (e) {
@@ -26,4 +26,30 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // Función para galería (modal de imágenes)
+  const imagenes = document.querySelectorAll(".galeria img");
+  const modal = document.getElementById("modal-img");
+  const imgAmpliada = document.getElementById("img-ampliada");
+  const cerrarBtn = document.getElementById("cerrar-modal");
+
+  if (imagenes.length && modal && imgAmpliada && cerrarBtn) {
+    imagenes.forEach(imagen => {
+      imagen.addEventListener("click", () => {
+        imgAmpliada.src = imagen.src;
+        modal.style.display = "flex";
+      });
+    });
+
+    cerrarBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
 });
+
