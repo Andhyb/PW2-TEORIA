@@ -1,10 +1,12 @@
-Pagina web personal - Programacion Web 2
+# Página web personal – Programación Web 2
 
-Este proyecto corresponde la practica 2 del curso de Programación Web 2, y consiste en una página web personal desarrollada con HTML, CSS, JavaScript, Node.js y Express, empaquetada en un contenedor Docker para facilitar su ejecución en cualquier entorno.
+Este proyecto corresponde a la **Práctica 2** del curso de **Programación Web 2**, y consiste en una página web personal desarrollada con HTML, CSS, JavaScript, Node.js y Express, empaquetada en un contenedor Docker para facilitar su ejecución en cualquier entorno.
 
+---
 
+## 📁 Estructura del Proyecto
 
-ESTRUCTURA DE MI PROYECTO:
+```bash
 Prac02/
 ├── public/               # Archivos estáticos (CSS, JS, imágenes)
 │   ├── css/
@@ -13,7 +15,7 @@ Prac02/
 │   │   └── script.js
 │   └── img/
 │       └── foto1.jpg ...
-├── views/               # Todas las paginas HTML
+├── views/                # Todas las páginas HTML
 │   ├── index.html
 │   ├── autor.html
 │   ├── hobbies.html
@@ -21,31 +23,33 @@ Prac02/
 │   ├── ingSoftware.html
 │   ├── estandaresWeb.html
 │   └── contactame.html
-├── server.js            # Servidor con Express
-├── package.json         
-└── Dockerfile           
+├── server.js             # Servidor con Express
+├── package.json
+└── Dockerfile
 
+## 📁 Estructura del Proyecto
 
-# En este directorio:
-# Iniciar proyecto node
+# Inicializa el proyecto Node
 npm init -y
-#Instalar Express
+
+# Instala Express
 npm install express
-#Ejecutar el servidor localmente
+
+# Ejecuta el servidor
 node server.js
-#Ver la pagina en local
+
+# Accede a la web desde:
 http://localhost:8091
 
-#En Dockerfile
-#1: Construir la imagen
-docker build -t prac02 .
-#2: Construir el contenedor
-docker run -d -p 8091:8091 --name practica2 prac02
-#3: Abrir en el navegador:
+## 📁 DOCKERFILE
+docker build -t practica2 .
+docker run -d -p 8091:8091 --name practica2 practica2
 http://localhost:8091
 
-- El contenedor está configurado para escuchar en el puerto 8091.
+📌 Detalles técnicos
+El contenedor está configurado para escuchar en el puerto 8091.
+La app se inicia con node server.js, y sirve las páginas HTML desde la carpeta /views. (esto para mas orden)
+Los recursos estáticos (CSS, JS, imágenes) están en public/.
+Todo el código JavaScript del cliente está en public/js/script.js.
 
-- La app se inicia con node server.js, y sirve los HTML desde /views. (esto para mayor orden)
 
-- Todo el código JavaScript está separado en public/js/script.js.
