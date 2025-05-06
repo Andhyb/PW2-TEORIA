@@ -1,6 +1,6 @@
-Proyecto Web Personal - Laboratorio 2
+Pagina web personal - Programacion Web 2
 
-Este proyecto corresponde la practica 2 de Programación Web 2, y consiste en una página web personal desarrollada con HTML, CSS, JavaScript, Node.js y Express, empaquetada en un contenedor Docker para facilitar su ejecución en cualquier entorno.
+Este proyecto corresponde la practica 2 del curso de Programación Web 2, y consiste en una página web personal desarrollada con HTML, CSS, JavaScript, Node.js y Express, empaquetada en un contenedor Docker para facilitar su ejecución en cualquier entorno.
 
 
 
